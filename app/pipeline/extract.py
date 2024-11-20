@@ -5,15 +5,15 @@ import openpyxl
 from typing import List
 from app.config import DATA_INPUT_PATH
 
-path = DATA_INPUT_PATH
-
-"""
-Function to read files from path and return a list of dataframes
-args: input_path {str}: path to the input folder
-return: a list of dataframes
-"""
+input_path = DATA_INPUT_PATH
 
 def extract_from_excel(input_path: str) -> List[pd.DataFrame]:
+    """
+    Function to read files from path and return a list of dataframes
+    args: input_path {str}: path to the input folder
+    return: a list of dataframes
+    """
+
     if not os.path.exists(input_path):
         print(f'Directory does not exist: {input_path}')
         return []
