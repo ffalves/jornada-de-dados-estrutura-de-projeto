@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "workshop: estrutura de um projeto de dados"
+version = "0.1.0"
+description = "Replicando o conteúdo do workshop."
+authors = ["Fefe Alves <monitore.falves@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+
+[tool.poetry.scripts]
+app = "app.pipeline.extract:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
